@@ -1,0 +1,12 @@
+<td>{{ id }}</td>
+<td>{{ title }}</td>
+<td>{{ author }}</td>
+<td>{{ status }}</td>
+<td>
+    <button (click)="onClickSwitchStatus()" class="btn btn-outline-dark text-center me-2">
+    Basculer en {{ nextStatus | lowercase }}
+  </button>
+    <button [routerLink]="['/books', id]" class="btn btn-primary text-center">
+    Voir
+  </button>
+</td>

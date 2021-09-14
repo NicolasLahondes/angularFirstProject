@@ -1,0 +1,8 @@
+<div class="text-center">
+    <button class="btn-dark px-5 py-2" (click)="onClickSwitchAllStatus('Pris')">
+    Empruntés</button
+  ><button class="btn-dark px-5 py-2" (click)="onClickSwitchAllStatus('Libre')">
+    Libres
+  </button>
+</div>
+<app-books-table [books]="books"></app-books-table>
